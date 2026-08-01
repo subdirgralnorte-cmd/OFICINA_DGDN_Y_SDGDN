@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turnero - Dirección General Departamentales Norte</title>
+ 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+ 
+  <style>
+    /* ── Variables Institucionales DGDN ── */
+    :root {
+      --navy:       #0d1b2a;
+      --navy-mid:   #1a2e45;
+      --navy-light: #243b55;
+      --gold:       #c8a84b;
+      --gold-light: #e8c96b;
+      --cream:      #f5f0e8;
+      --text-dark:  #0d1b2a;
+      --text-mid:   #3a4f63;
+      --text-light: #6b7f92;
+      --white:      #ffffff;
+      --red:        #c0392b;
+      --success:    #1a7a4a;
+    }
+ 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "DM Sans", sans-serif;
+      background-color: var(--navy);
+      color: var(--white);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(200, 168, 75, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(36, 59, 85, 0.3) 0%, transparent 40%);
+    }
+
+    .page-header {
+      text-align: center;
+      margin-bottom: 40px;
+      max-width: 800px;
+    }
+
+    .page-header h2 {
+      font-size: 0.95rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .gold-divider {
+      height: 2px;
+      width: 80px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 0 auto 15px auto;
+    }
+
+    .page-header h1 {
+      font-family: "DM Serif Display", serif;
+      font-size: 2.2rem;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      line-height: 1.2;
+    }
+
+    .hub-wrapper {
+      width: 100%;
+      max-width: 850px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 25px;
+    }
+
+    .action-card {
+      background: rgba(255, 255, 255, 0.96);
+      border-radius: 12px;
+      padding: 35px 25px;
+      text-decoration: none;
+      color: var(--text-dark);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      border: 1px solid rgba(200, 168, 75, 0.3);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .action-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 5px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    }
+
+    .action-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 15px 35px rgba(200, 168, 75, 0.25);
+      border-color: var(--gold);
+      background: var(--white);
+    }
+
+    .action-icon {
+      font-size: 2.8rem;
+      margin-bottom: 18px;
+      width: 70px;
+      height: 70px;
+      background: var(--cream);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--gold);
+      transition: transform 0.3s ease;
+    }
+
+    .action-card:hover .action-icon {
+      transform: scale(1.08);
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    }
+
+    .action-title {
+      font-family: "DM Serif Display", serif;
+      font-size: 1.35rem;
+      margin-bottom: 12px;
+      color: var(--navy);
+      letter-spacing: 0.5px;
+    }
+
+    .action-desc {
+      font-size: 0.92rem;
+      color: var(--text-light);
+      line-height: 1.5;
+    }
+
+    .footer-credits {
+      margin-top: 50px;
+      font-size: 0.8rem;
+      color: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+ 
+<body>
+ 
+  <div class="page-header">
+    <h2>DIRECCIÓN GENERAL DEPARTAMENTALES NORTE</h2>
+    <div class="gold-divider"></div>
+    <h1>TURNERO DIRECCIÓN GENERAL DEPARTAMENTALES NORTE</h1>
+  </div>
+ 
+  <div class="hub-wrapper">
+    <div class="grid-2">
+      
+      <a href="https://script.google.com/macros/s/AKfycbzyuPsWxscCnux_sNggha0oJ9BX9sYocthWK95gR66RUX481QjDRuru-Gqh_2uIceYmQA/exec" class="action-card" target="_blank" rel="noopener noreferrer">
+        <div class="action-icon">📝</div>
+        <h3 class="action-title">CARGA DE TURNOS DEL PERSONAL</h3>
+        <p class="action-desc">Formulario de autogestión e ingreso de horarios de servicio semanal para los efectivos de la dependencia.</p>
+      </a>
+
+      <a href="https://script.google.com/macros/s/AKfycbzyuPsWxscCnux_sNggha0oJ9BX9sYocthWK95gR66RUX481QjDRuru-Gqh_2uIceYmQA/exec?page=placa" class="action-card" target="_blank" rel="noopener noreferrer">
+        <div class="action-icon">📊</div>
+        <h3 class="action-title">TURNERO EN PLACA</h3>
+        <p class="action-desc">Consulta de la planificación consolidada, listado de personal pendiente y exportación de matriz en formato JPG HD.</p>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="footer-credits">
+    POLICÍA DE LA PROVINCIA DE CÓRDOBA &bull; DGDN
+  </div>
+
+</body>
+</html>
